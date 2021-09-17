@@ -6,7 +6,7 @@ base.title("Simple Calculator")
 
 # Text entry of the calculator
 e = Entry(base, width= 35, borderwidth= 5)
-e.grid(row= 0, column = 0, columnspan= 3, padx= 10, pady= 10)
+e.grid(row= 0, column= 0, columnspan= 3, padx= 10, pady= 10)
 
 def button_click(number):
     
@@ -15,37 +15,37 @@ def button_click(number):
     e.insert(0, str(current) + str(number))
 
 def button_add():
-    first_numbner = e.get()
+    first_number = e.get()
     global f_num 
     global math 
     math = "addition"
-    f_num = int(first_numbner)
+    f_num = int(first_number)
     e.delete(0, END)
 
 def button_subtract():
-    first_numbner = e.get()
+    first_number = e.get()
     global f_num 
     global math 
     math = "substraction"
-    f_num = int(first_numbner)
+    f_num = int(first_number)
     e.delete(0, END)
     return
 
 def button_multiply():
-    first_numbner = e.get()
+    first_number = e.get()
     global f_num 
     global math 
     math = "multiplication"
-    f_num = int(first_numbner)
+    f_num = int(first_number)
     e.delete(0, END)
     return
 
 def button_divide():
-    first_numbner = e.get()
+    first_number = e.get()
     global f_num 
     global math 
     math = "division"
-    f_num = int(first_numbner)
+    f_num = int(first_number)
     e.delete(0, END)
     return
 
@@ -80,8 +80,8 @@ button_0 = Button(base, text= "0", padx= 40, pady= 20, command= lambda: button_c
 
 button_add = Button(base, text= "+", padx= 39, pady= 20, command= button_add)
 button_subtract = Button(base, text= "-", padx= 41, pady= 20, command= button_subtract) 
-button_multiply = Button(base, text="*", padx= 41, pady= 20, command= button_multiply)
-button_divide = Button(base, text="/", padx= 39, pady= 20, command= button_divide)
+button_multiply = Button(base, text= "*", padx= 41, pady= 20, command= button_multiply)
+button_divide = Button(base, text= "/", padx= 39, pady= 20, command= button_divide)
 
 button_equal = Button(base, text= "=", padx= 91, pady= 20, command= button_equal)
 button_clear = Button(base, text= "Clear", padx= 79, pady= 20, command= button_clear)
